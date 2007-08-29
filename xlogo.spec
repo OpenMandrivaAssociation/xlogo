@@ -39,6 +39,6 @@ rm -rf %{buildroot}
 %{_bindir}/xlogo
 %{_datadir}/X11/app-defaults/XLogo-color
 %{_datadir}/X11/app-defaults/XLogo
-%{_mandir}/man1/xlogo.1x.bz2
+%{_mandir}/man1/xlogo.1x*
 
 
