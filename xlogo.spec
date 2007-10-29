@@ -1,6 +1,6 @@
 Name:		xlogo
 Version:	1.0.1
-Release:	%mkrel 6
+Release:	%mkrel 7
 Summary:	X Window System logo
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -22,6 +22,7 @@ The xlogo program displays the X Window System logo.
 %setup -q -n %{name}-%{version}
 
 %build
+autoreconf -ifs
 %configure2_5x	--x-includes=%{_includedir} \
 		--x-libraries=%{_libdir}
 
@@ -39,5 +40,5 @@ rm -rf %{buildroot}
 %{_bindir}/xlogo
 %{_datadir}/X11/app-defaults/XLogo-color
 %{_datadir}/X11/app-defaults/XLogo
-%{_mandir}/man1/xlogo.1x*
+%{_mandir}/man1/xlogo.1*
 
