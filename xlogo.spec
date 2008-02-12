@@ -7,11 +7,13 @@ Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.
 License:	MIT
 BuildRoot:	%{_tmppath}/%{name}-root
 
-BuildRequires:	x11-util-macros		>= 1.1.5
-BuildRequires:	libxaw-devel		>= 1.0.4
-BuildRequires:	libxprintutil-devel	>= 1.0.1
-BuildRequires:	libxrender-devel	>= 0.9.4
-BuildRequires:	xft2-devel		>= 2.1.12
+BuildRequires: libxext-devel >= 1.0.0
+BuildRequires: libxt-devel >= 1.0.0
+BuildRequires: libxaw-devel >= 1.0.1
+BuildRequires: libxprintutil-devel >= 1.0.1
+BuildRequires: libxrender-devel >= 0.9.0.2
+BuildRequires: x11-util-macros >= 1.0.1
+BuildRequires: xft2-devel >= 2.1.8.2
 
 %description
 The xlogo program displays the X Window System logo.
@@ -21,7 +23,7 @@ The xlogo program displays the X Window System logo.
 
 %build
 autoreconf -ifs
-%configure	--x-includes=%{_includedir} \
+%configure2_5x	--x-includes=%{_includedir} \
 		--x-libraries=%{_libdir}
 
 %make
