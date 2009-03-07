@@ -1,6 +1,6 @@
 Name:		xlogo
 Version:	1.0.1
-Release:	%mkrel 8
+Release:	%mkrel 9
 Summary:	X Window System logo
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
