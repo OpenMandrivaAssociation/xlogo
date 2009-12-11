@@ -1,10 +1,9 @@
 Name:		xlogo
-Version:	1.0.1
-Release:	%mkrel 9
+Version:	1.0.2
+Release:	%mkrel 1
 Summary:	X Window System logo
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
-Patch0:		xlogo-1.0.1-fix-str-fmt.patch
 License:	MIT
 BuildRoot:	%{_tmppath}/%{name}-root
 
@@ -21,7 +20,6 @@ The xlogo program displays the X Window System logo.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch0 -p0
 
 %build
 %configure2_5x
