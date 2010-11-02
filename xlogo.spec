@@ -1,5 +1,5 @@
 Name:		xlogo
-Version:	1.0.2
+Version:	1.0.3
 Release:	%mkrel 1
 Summary:	X Window System logo
 Group:		Development/X11
