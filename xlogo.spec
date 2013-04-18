@@ -6,12 +6,11 @@ Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
 
-BuildRequires: libxext-devel >= 1.0.0
-BuildRequires: libxt-devel >= 1.0.0
-BuildRequires: libxaw-devel >= 1.0.1
-BuildRequires: libxprintutil-devel >= 1.0.1
-BuildRequires: libxrender-devel >= 0.9.0.2
-BuildRequires: x11-util-macros >= 1.0.1
+BuildRequires: pkgconfig(xext)
+BuildRequires: pkgconfig(xt)
+BuildRequires: pkgconfig(xaw7)
+BuildRequires: pkgconfig(xrender) >= 0.9.0.2
+BuildRequires: pkgconfig(xorg-macros) >= 1.0.1
 BuildRequires: pkgconfig(xft) >= 2.1.8.2
 
 %description
